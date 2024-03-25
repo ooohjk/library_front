@@ -1,0 +1,92 @@
+.mainHeader {
+    /*border: 1px solid black;*/
+    width: 100%;
+    height: 150px;
+    position: relative;
+}
+
+.mainBody {
+    width: 100%;
+    height: 750px;
+}
+
+.joinButtonBox {
+    width: 100px;
+    height: 40px;
+    position: relative;
+    float: right;
+    top: 50px;
+    right: 50px;
+}
+
+.loginButtonBox {
+    width: 100px;
+    height: 40px;
+    position: relative;
+    top: 50px;
+    right: 80px;
+    float: right;
+}
+
+.joinButton {
+    width: 100%;
+    height: 100%;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.loginButton {
+    width: 100%;
+    height: 100%;
+    font-weight: bold;
+    background-color: #61dafb;
+    border-radius: 5px;
+}
+
+.searchBox {
+    width: 400px;
+    height: 60px;
+    margin: 200px auto;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.searchText {
+    width: 180px;
+    height: 20px;
+    font-size: 15px;
+    margin-left: 5px;
+}
+
+.searchButton {
+    margin-left: 7px;
+    height: 25px;
+}
+
+.profileIcon {
+    border: 1px solid black;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+    float: right;
+    top: 50px;
+    right: 200px;
+}
+
+.logoutButtonBox {
+    width: 100px;
+    height: 40px;
+    float: right;
+    position: relative;
+    top: 50px;
+    right: 10px;
+}
+
+.logoutButton {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}

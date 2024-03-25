@@ -1,0 +1,203 @@
+.joinBox {
+    border: 1px solid black;
+    width: 400px;
+    height: 700px;
+    margin: 100px auto;
+    border-radius: 8px;
+    background-color: beige;
+}
+
+.joinId {
+    width: 100%;
+    height: 60px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.joinIdBox {
+    width: 80%;
+    position: relative;
+    top: 15px;
+    left: 20px;
+}
+
+.joinIdBox input {
+    float: right;
+    width: 65%;
+    height: 20px;
+    position: relative;
+    right: 10px;
+}
+
+.joinIdBox span {
+    font-weight: bold;
+}
+
+.joinPwd {
+    width: 100%;
+    height: 60px;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.joinPwdBox {
+    width: 80%;
+    position: relative;
+    top: 15px;
+    left: 20px;
+}
+
+.joinPwdBox input {
+    float: right;
+    width: 65%;
+    height: 20px;
+    position: relative;
+    right: 10px;
+}
+
+.joinPwdBox span {
+    font-weight: bold;
+}
+
+.joinName {
+    width: 100%;
+    height: 60px;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.joinNameBox {
+    width: 80%;
+    position: relative;
+    top: 15px;
+    left: 20px;
+}
+
+.joinNameBox input {
+    float: right;
+    width: 65%;
+    height: 20px;
+    position: relative;
+    right: 10px;
+}
+
+.joinNameBox span {
+    font-weight: bold;
+}
+
+.joinEmail {
+    width: 100%;
+    height: 60px;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.joinEmailBox {
+    width: 80%;
+    position: relative;
+    top: 15px;
+    left: 20px;
+}
+
+.joinEmailBox input {
+    float: right;
+    width: 65%;
+    height: 20px;
+    position: relative;
+    right: 10px;
+}
+
+.joinEmailBox span {
+    font-weight: bold;
+}
+
+.joinTel {
+    width: 100%;
+    height: 60px;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.joinTelBox {
+    width: 80%;
+    position: relative;
+    top: 15px;
+    left: 20px;
+}
+
+.joinTelBox input {
+    float: right;
+    width: 65%;
+    height: 20px;
+    position: relative;
+    right: 10px;
+}
+
+.joinTelBox span {
+    font-weight: bold;
+}
+
+.joinGender {
+    width: 100%;
+    height: 60px;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.genderBox {
+    position: relative;
+    top: 17px;
+    left: 30px;
+}
+
+.genderBox span {
+    font-weight: bold;
+}
+
+.manButton {
+    position: relative;
+    left: 30px;
+}
+
+.manLabel {
+    position: relative;
+    left: 30px;
+}
+
+.womanButton {
+    position: relative;
+    left: 40px;
+}
+
+.womanLabel {
+    position: relative;
+    left: 40px;
+}
+
+.joinOk {
+    width: 90%;
+    height: 50px;
+    margin: 0 auto 20px auto;
+}
+
+.joinOk button {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    font-weight: bold;
+    background-color: #61dafb;
+}
+
+.joinCancel {
+    width: 90%;
+    height: 50px;
+    margin: 0 auto 20px auto;
+}
+
+.joinCancel button {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    font-weight: bold;
+}
