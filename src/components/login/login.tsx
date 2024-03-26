@@ -1,12 +1,11 @@
 import "./style.css";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import React, { useState } from "react";
 import API from "../../apis/api";
 
 export default function Login() {
 
     const navigate = useNavigate();
-    const location = useLocation();
     const [id, setId] = useState("");
     const [pwd, setPwd] = useState("");
 
@@ -21,6 +20,8 @@ export default function Login() {
             } else {
                 const token = res?.data.data["accessToken"];
                 localStorage.setItem("accessToken", token);
+                localStorage.setItem("userNo", res?.data.data["userNo"]);
+                localStorage.setItem("userId", res?.data.data["userId"]);
                 navigate("/");
             }
         });

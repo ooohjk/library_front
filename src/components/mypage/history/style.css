@@ -1,0 +1,18 @@
+.rentHistoryTable {
+    width: 100%;
+}
+
+.rentHistoryTable thead {
+    width: 100%;
+    height: 50px;
+    background-color: #bbbbbb;
+}
+
+.rentHistoryTable tr, th, td {
+    border: 1px solid black;
+}
+
+.rentHistoryTable tr {
+    height: 50px;
+    text-align: center;
+}

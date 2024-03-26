@@ -1,0 +1,18 @@
+.rentStateTable {
+    width: 100%;
+}
+
+.rentStateTable thead {
+    width: 100%;
+    height: 50px;
+    background-color: #bbbbbb;
+}
+
+.rentStateTable tr, th, td {
+    border: 1px solid black;
+}
+
+.rentStateTable tr {
+    height: 50px;
+    text-align: center;
+}

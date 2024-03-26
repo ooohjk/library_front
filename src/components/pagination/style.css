@@ -1,0 +1,36 @@
+#navi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    margin: 16px;
+}
+
+.naviButton {
+    border: none;
+    border-radius: 8px;
+    padding: 8px;
+    margin: 0;
+    background: black;
+    color: white;
+    font-size: 1rem;
+}
+
+.naviButton:hover {
+    background: #13b6bb;
+    cursor: pointer;
+    transform: translateY(-2px);
+}
+
+.naviButton[disabled] {
+    background: #bbbbbb;
+    cursor: revert;
+    transform: revert;
+}
+
+.naviButton[aria-current] {
+    background: #13b6bb;
+    font-weight: bold;
+    cursor: revert;
+    transform: revert;
+}

@@ -1,0 +1,74 @@
+.myPageHeader {
+    width: 100%;
+    height: 150px;
+    background-color: beige;
+}
+
+.myPageBody {
+    width: 100%;
+    height: 750px;
+}
+
+.myPageMenu {
+    display: flex;
+    width: 100%;
+}
+
+.rentState {
+    height: 50px;
+    flex: 1;
+    position: relative;
+    left: 10%;
+}
+
+.rentLog {
+    height: 50px;
+    flex: 1;
+    position: relative;
+    left: 15%;
+}
+
+.heartList {
+    height: 50px;
+    flex: 1;
+    position: relative;
+    left: 20%;
+}
+
+.none {
+    flex: 2;
+}
+
+.rentStateButton {
+    width: 100%;
+    height: 100%;
+    background-color: beige;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.rentLogButton {
+    width: 100%;
+    height: 100%;
+    background-color: beige;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.heartListButton {
+    width: 100%;
+    height: 100%;
+    background-color: beige;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.myPageContent {
+    /*border: 1px solid black;*/
+    width: 80%;
+    height: 90%;
+    margin: 40px auto;
+}

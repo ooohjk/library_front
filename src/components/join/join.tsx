@@ -63,27 +63,27 @@ export default function Join() {
             <div className="joinBox">
                 <div className="joinId">
                     <div className="joinIdBox">
-                        <span>아이디: </span><input value={id} onChange={idOnChange} autoFocus={true}/>
+                        <span>아이디: </span><input value={id} onChange={idOnChange} autoFocus={true} placeholder="필수 입력사항입니다."/>
                     </div>
                 </div>
                 <div className="joinPwd">
                     <div className="joinPwdBox">
-                        <span>비밀번호: </span><input type="password" value={pwd} onChange={pwdOnChange}/>
+                        <span>비밀번호: </span><input type="password" value={pwd} onChange={pwdOnChange} placeholder="필수 입력사항입니다."/>
                     </div>
                 </div>
                 <div className="joinName">
                     <div className="joinNameBox">
-                        <span>이름: </span><input value={name} onChange={nameOnChange}/>
+                        <span>이름: </span><input value={name} onChange={nameOnChange} placeholder="필수 입력사항입니다."/>
                     </div>
                 </div>
                 <div className="joinEmail">
                     <div className="joinEmailBox">
-                        <span>이메일: </span><input value={email} onChange={emailOnChange}/>
+                        <span>이메일: </span><input value={email} onChange={emailOnChange} placeholder="필수 입력사항입니다."/>
                     </div>
                 </div>
                 <div className="joinTel">
                     <div className="joinTelBox">
-                        <span>전화번호: </span><input value={tel} onChange={telOnChange}/>
+                        <span>전화번호: </span><input value={tel} onChange={telOnChange} placeholder="010-****-****"/>
                     </div>
                 </div>
                 <div className="joinGender">
