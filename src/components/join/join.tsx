@@ -53,6 +53,7 @@ export default function Join() {
             if(res?.data.code !== "S00") {
                 alert(res?.data.msg);
             } else {
+                alert("회원가입에 성공하였습니다. 로그인을 해주세요.");
                 navigate("/");
             }
         })
@@ -94,12 +95,12 @@ export default function Join() {
                     </div>
                 </div>
                 <div className="joinOk">
-                    <button onClick={join}>join</button>
+                    <button onClick={join}>회원가입</button>
                 </div>
                 <div className="joinCancel">
                     <button onClick={() => {
                         navigate("/")
-                    }}>cancel</button>
+                    }}>취소</button>
                 </div>
             </div>
         </div>

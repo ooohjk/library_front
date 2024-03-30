@@ -15,6 +15,7 @@ export default function Hearts() {
         regDt: "",
         regTm: ""
     }]);
+    const [checking, setChecking] = useState(false);
     const [page, setPage] = useState(1); // page
     const limit = 10; // 한 페이지당 리스트 갯수
     const offset = (page - 1) * limit; // offset
@@ -37,7 +38,7 @@ export default function Hearts() {
 
     useEffect(() => {
         getMyHeartsList().then();
-    }, []);
+    }, [ , checking]);
 
     const deleteOnClick = async (e: any) => {
         if(window.confirm("찜 해제 하시겠습니까?")) {
@@ -60,7 +61,7 @@ export default function Hearts() {
             console.log(res?.data);
             if(res?.data.code === "S00") {
                 console.log("찜 해제 성공");
-                window.location.reload();
+                setChecking(!checking);
             } else {
                 alert(res?.data.msg);
             }

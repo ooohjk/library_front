@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import "./style.css";
+import React from "react";
 
 const BeforeLogin = () => {
 
@@ -17,6 +18,9 @@ const BeforeLogin = () => {
 
     return (
         <>
+            <div className="home">
+                <div onClick={() => navigate("/")}>Home</div>
+            </div>
             <div className="joinButtonBox">
                 <button className="joinButton" onClick={joinOnClick}>회원가입</button>
             </div>

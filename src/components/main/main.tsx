@@ -1,7 +1,8 @@
 import "./style.css";
 import BeforeLogin from "./beforeLogin";
 import AfterLogin from "./afterLogin";
-import React, { useState } from "react";
+import React from "react";
+import Search from "./search";
 
 export default function Main() {
 
@@ -18,9 +19,7 @@ export default function Main() {
                 {headers}
             </div>
             <div className="mainBody">
-                <div className="searchBox">
-                    도서 검색: <input type="text" className="searchText"/><button className="searchButton">검색</button>
-                </div>
+                <Search/>
             </div>
         </div>
     );

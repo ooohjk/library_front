@@ -1,0 +1,222 @@
+.detailHeader {
+    width: 100%;
+    height: 150px;
+    background-color: beige;
+}
+
+.detailBox {
+    width: 800px;
+    margin: 15px auto 0 auto;
+}
+
+.bookImageBox {
+    width: 50%;
+    height: 500px;
+    float: left;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.bookImageBox img {
+    width: 100%;
+    height: 100%;
+}
+
+.bookInfoBox {
+    width: 50%;
+    height: 500px;
+    float: right;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.bookInfo {
+    border: 1px solid black;
+    width: 90%;
+    height: 90%;
+    margin: 5% auto;
+}
+
+.bookTitle {
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.bookAuthor, .isbn, .bookPublisher, .pubDate, .bookLocation, .bookState {
+    padding-left: 30px;
+    padding-top: 15px;
+}
+
+.bookContentBox {
+    width: 100%;
+}
+
+.bookContent {
+    border: 1px solid black;
+    width: 90%;
+    margin: 5px auto;
+    padding: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.contentBtn {
+    width: 80px;
+    height: 25px;
+    margin-left: 360px ;
+    margin-bottom: 5px;
+}
+
+.bookReviewBox {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.bookReviewTable {
+    width: 100%;
+}
+
+.reviewIds, .reviewDates {
+    width: 20%;
+}
+
+.reviewContents {
+    width: 60%;
+}
+
+.reviewId {
+    height: 80px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.reviewContent {
+    padding: 8px;
+}
+
+.reviewContent:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.reviewDate {
+    text-align: center;
+    font-size: 15px;
+}
+
+.noReview {
+    text-align: center;
+}
+
+.addReviewBox {
+    margin-top: 5px;
+    width: 100%;
+}
+
+.addReview {
+    width: 95%;
+    height: 120px;
+    margin: 5px auto;
+}
+
+.writeHere {
+    width: 80%;
+    height: 90%;
+    margin: 3px auto 0 auto;
+    resize: none;
+    font-size: 15px;
+    padding: 5px;
+}
+
+.writeButton {
+    width: 80px;
+    height: 30px;
+    background-color: #61dafb;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-weight: bold;
+    position: relative;
+    left: 45px;
+    bottom: 55px;
+}
+
+#afterMod span {
+    font-size: 12px;
+}
+
+.reviewModal {
+    border: 1px solid black;
+    width: 98px;
+    height: 58px;
+    position: absolute;
+    background-color: #bbbbbb;
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.reviewUpdateBtn {
+    margin-top: 5px;
+    margin-bottom: 3px;
+    background-color: #61dafb;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-weight: bold;
+
+}
+
+.reviewUpdateBtn:active {
+    opacity: 0.4;
+}
+
+.reviewDeleteBtn {
+    background-color: deeppink;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-weight: bold;
+}
+
+.reviewDeleteBtn:active {
+    opacity: 0.4;
+}
+
+.updateModal {
+    width: 75%;
+    height: 120px;
+    margin: 300px auto;
+}
+
+.updateWriteHere {
+    width: 100%;
+    height: 100%;
+    resize: none;
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.updateOk, .updateCancel {
+    float: right;
+}
+
+.updateOk {
+    margin-right: 7px;
+    width: 80px;
+    height: 25px;
+    text-align: center;
+    background-color: #61dafb;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.updateCancel {
+    width: 80px;
+    height: 25px;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 5px;
+}

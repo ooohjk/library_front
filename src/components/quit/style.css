@@ -1,4 +1,4 @@
-.loginBox {
+.quitBox {
     border: 1px solid black;
     width: 400px;
     height: 700px;
@@ -7,13 +7,13 @@
     background-color: beige;
 }
 
-.idBox {
+.quitIdBox {
     width: 100%;
     height: 50px;
     margin-top: 150px;
 }
 
-.idInput {
+.quitIdInput {
     width: 90%;
     height: 90%;
     text-align: center;
@@ -21,7 +21,7 @@
     font-size: 15px;
 }
 
-.pwdInput {
+.quitPwdInput {
     width: 90%;
     height: 90%;
     text-align: center;
@@ -29,19 +29,19 @@
     font-size: 15px;
 }
 
-.pwdBox {
+.quitPwdBox {
     width: 100%;
     height: 50px;
     margin-top: 20px;
 }
 
-.okButton {
+.quitOkButton {
     width: 100%;
     height: 50px;
     margin-top: 200px;
 }
 
-.okButton button {
+.quitOkButton button {
     width: 90%;
     height: 100%;
     border-radius: 10px;
@@ -50,13 +50,13 @@
     font-weight: bold;
 }
 
-.cancelButton {
+.quitCancelButton {
     width: 100%;
     height: 50px;
     margin-top: 20px;
 }
 
-.cancelButton button {
+.quitCancelButton button {
     width: 90%;
     height: 100%;
     border-radius: 10px;

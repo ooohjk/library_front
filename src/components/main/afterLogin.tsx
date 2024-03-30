@@ -11,6 +11,7 @@ const AfterLogin = () => {
         localStorage.removeItem("accessToken");
         localStorage.removeItem("userId");
         localStorage.removeItem("userNo");
+        alert("로그아웃을 하였습니다.");
         navigate("/");
         window.location.reload();
     }
@@ -41,6 +42,12 @@ const AfterLogin = () => {
 
     return (
         <>
+            <div className="home">
+                <div onClick={() => navigate("/")}>Home</div>
+            </div>
+            <div className="quitLinkBox">
+                <a href="/quit" className="quitLink">탈퇴하기</a>
+            </div>
             <div className="profileIcon">
                 {profile === "M" && (
                     <img src="/profile_1.png" alt="" className="manProfile" onClick={iconOnClick}/>
