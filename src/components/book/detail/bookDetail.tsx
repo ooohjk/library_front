@@ -1,24 +1,15 @@
 import "./style.css";
 import AfterLogin from "../../main/afterLogin";
-import { useNavigate, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import API from "../../../apis/api";
-import LoremIpsum from "react-lorem-ipsum";
 import Modal from "react-modal";
+import BookInfo from "../bookInfo";
 
 export default function BookDetail() {
 
     const { option, search } = useParams();
     const [bookCode, setBookCode] = useState(0);
-    const [bookName, setBookName] = useState("");
-    const [bookAuthor, setBookAuthor] = useState("");
-    const [bookContent, setBookContent] = useState("");
-    const [bookState, setBookState] = useState(0);
-    const [bookPublisher, setBookPublisher] = useState("");
-    const [isbn, setIsbn] = useState("");
-    const [pubDate, setPubDate] = useState("");
-    const [bookLocation, setBookLocation] = useState("");
-    const [bookImage, setBookImage] = useState("");
     const [reviews, setReviews] = useState([{
         reviewNo: 0,
         bookCode: 0,
@@ -29,8 +20,6 @@ export default function BookDetail() {
         modTm: "",
         reviewContent: ""
     }]);
-    const [contentBtn, setContentBtn] = useState(false);
-    const [height, setHeight] = useState(80);
     const [reviewContent, setReviewContent] = useState("");
     const [isModalOpened, setIsModalOpened] = useState(false);
     const [xy, setXY] = useState({x: 0, y: 0});
@@ -52,26 +41,8 @@ export default function BookDetail() {
                 console.error(err);
             }).then((res) => {
                 setBookCode(res?.data.data.bookCode);
-                setBookName(res?.data.data.bookName);
-                setBookAuthor(res?.data.data.bookAuthor);
-                setBookContent(res?.data.data.bookContent);
-                setBookState(res?.data.data.bookState);
-                setBookPublisher(res?.data.data.bookPublisher);
-                setIsbn(res?.data.data.isbn);
-                setPubDate(res?.data.data.pubDate);
-                setBookLocation(res?.data.data.bookLocation);
-                setBookImage(res?.data.data.bookImage);
                 setReviews(res?.data.data.review);
             })
-    }
-
-    const contentBtnOnClick = () => {
-        if(contentBtn) {
-            setHeight(80);
-        } else {
-            setHeight(800);
-        }
-        setContentBtn(!contentBtn); // false: 펼치기 버튼, true: 요약 버튼
     }
 
     const contentOnClick = (reviewNo: number, userId: string, e: any) => {
@@ -181,9 +152,6 @@ export default function BookDetail() {
     }
 
     const deleteReviewOnClick = () => {
-        console.log("댓글 삭제")
-        console.log(updateReviewNo)
-        console.log(updateUserId)
         if(window.confirm("댓글을 삭제하시겠습니까?")) {
             deleteReview().then();
         }
@@ -209,29 +177,7 @@ export default function BookDetail() {
                 </div>
                 <div className="detailBody">
                     <div className="detailBox">
-                        <div className="bookImageBox">
-                            <img src={bookImage} alt=""/>
-                        </div>
-                        <div className="bookInfoBox">
-                            <div className="bookInfo">
-                                <p className="bookTitle">제목: {bookName}</p>
-                                <hr/>
-                                <p className="bookAuthor">저자: {bookAuthor}</p>
-                                <p className="isbn">ISBN: {isbn}</p>
-                                <p className="bookPublisher">출판사: {bookPublisher}</p>
-                                <p className="pubDate">발행일: {pubDate.substring(0, 4)} / {pubDate.substring(4, 6)} / {pubDate.substring(6)}</p>
-                                <p className="bookLocation">위치: {bookLocation}</p>
-                                <p className="bookState">상태: {bookState ? "대여중" : "대여가능"}</p>
-                            </div>
-                        </div>
-                        <hr/>
-                        <div className="bookContentBox">
-                            <div className="bookContent" style={{height: height}}>
-                                {bookContent}
-                                {/*<LoremIpsum p={5}/> /!*테스트용*!/*/}
-                            </div>
-                            <button onClick={contentBtnOnClick} className="contentBtn">{contentBtn ? "요약" : "펼치기"}</button>
-                        </div>
+                        <BookInfo/>
                         <div className="bookReviewBox">
                             <table className="bookReviewTable">
                                 <thead>

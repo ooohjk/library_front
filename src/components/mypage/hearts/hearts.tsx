@@ -2,6 +2,7 @@ import "./style.css";
 import {useEffect, useState} from "react";
 import Pagination from "../../pagination/pagination";
 import API from "../../../apis/api";
+import {useNavigate} from "react-router-dom";
 
 export default function Hearts() {
 
@@ -19,6 +20,7 @@ export default function Hearts() {
     const [page, setPage] = useState(1); // page
     const limit = 10; // 한 페이지당 리스트 갯수
     const offset = (page - 1) * limit; // offset
+    const navigate = useNavigate();
 
     const getMyHeartsList = async () => {
         await API.get(`/user/hearts/${localStorage.getItem("userNo")}`, {
@@ -68,6 +70,11 @@ export default function Hearts() {
         });
     }
 
+    const nameOnClick = (e: any) => {
+        // 로그인 상세 조회
+        navigate(`/search/detail/bookName/${e.target.innerText}`);
+    }
+
     const HeartsList = () => {
         return (
             <>
@@ -75,10 +82,12 @@ export default function Hearts() {
                     (heart, idx) => (
                         <tr key={idx}>
                             <td>{heart.bookCode}</td>
-                            <td>{heart.bookName}</td>
+                            <td onClick={nameOnClick} className="bookName">{heart.bookName}</td>
                             <td>{heart.bookAuthor}</td>
                             <td>{heart.bookPublisher}</td>
-                            <td>{heart.bookImage}</td>
+                            <td className="heartBookImage">
+                                <img src={heart.bookImage} alt=""/>
+                            </td>
                             <td>{heart.regDt.substring(0, 4)}/{heart.regDt.substring(4, 6)}/{heart.regDt.substring(6)} {heart.regTm.substring(0, 2)}:{heart.regTm.substring(2, 4)}:{heart.regTm.substring(4)}</td>
                             <td>
                                 <button className="heartDeleteButton" onClick={deleteOnClick} value={heart.heartNo}>해제</button>

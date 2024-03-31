@@ -48,6 +48,11 @@
     font-weight: bold;
 }
 
+.rentStateButton:hover {
+    color: red;
+    cursor: pointer;
+}
+
 .rentLogButton {
     width: 100%;
     height: 100%;
@@ -57,6 +62,11 @@
     font-weight: bold;
 }
 
+.rentLogButton:hover {
+    color: red;
+    cursor: pointer;
+}
+
 .heartListButton {
     width: 100%;
     height: 100%;
@@ -64,6 +74,11 @@
     border: none;
     font-size: 20px;
     font-weight: bold;
+}
+
+.heartListButton:hover {
+    color: red;
+    cursor: pointer;
 }
 
 .myPageContent {

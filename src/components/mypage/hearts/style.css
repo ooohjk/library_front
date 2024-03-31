@@ -16,3 +16,11 @@
     height: 50px;
     text-align: center;
 }
+
+.heartBookImage {
+    height: 100px
+}
+
+.heartBookImage img {
+    height: 100%;
+}

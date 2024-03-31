@@ -3,3 +3,8 @@
     height: 150px;
     background-color: beige;
 }
+
+.simpleBox {
+    width: 800px;
+    margin: 15px auto 0 auto;
+}

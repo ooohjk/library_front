@@ -1,6 +1,7 @@
 import "./style.css";
 import { useEffect, useState } from "react";
 import API from "../../../apis/api";
+import {useNavigate} from "react-router-dom";
 
 export default function State() {
 
@@ -15,6 +16,7 @@ export default function State() {
         returnDt: null,
         userNo: 0
     }]);
+    const navigate = useNavigate();
 
     const extensionOnClick = async (e: any) => {
         if(window.confirm("연장 하시겠습니까?")) {
@@ -67,13 +69,18 @@ export default function State() {
         })
     }
 
+    const nameOnClick = (e: any) => {
+        // 로그인 상세 조회
+        navigate(`/search/detail/bookName/${e.target.innerText}`);
+    }
+
     function AddRentHistory() {
         return (
             <>
                 {rentList.map((list, idx) => (
                     <tr key={idx}>
                         <td>{idx + 1}</td>
-                        <td>{list.bookName}</td>
+                        <td onClick={nameOnClick} className="bookName">{list.bookName}</td>
                         <td>{list.rentDt}</td>
                         <td>{list.prospectDt}</td>
                         <td>

@@ -33,3 +33,102 @@
     color: red;
     cursor: pointer;
 }
+
+.bookImageBox {
+    width: 50%;
+    height: 500px;
+    float: left;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.bookImageBox img {
+    width: 100%;
+    height: 100%;
+}
+
+.clickHeart {
+    /*border: 1px solid black;*/
+    width: 25px;
+    height: 25px;
+    float: right;
+    position: relative;
+    right: 5px;
+    top: 5px;
+    cursor: pointer;
+}
+
+.heartImg {
+    width: 100%;
+    height: 100%;
+}
+
+.bookInfoBox {
+    width: 50%;
+    height: 500px;
+    float: right;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.bookInfo {
+    border: 1px solid black;
+    width: 90%;
+    height: 90%;
+    margin: 5% auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+}
+
+.bookTitle {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.bookTitle, .bookAuthor, .isbn, .bookPublisher, .pubDate, .bookLocation, .bookState {
+    padding-left: 30px;
+    padding-top: 10px;
+}
+
+.bookContentBox {
+    width: 100%;
+}
+
+.bookContent {
+    border: 1px solid black;
+    width: 90%;
+    margin: 5px auto;
+    padding: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.contentBtn {
+    width: 80px;
+    height: 25px;
+    margin-left: 360px ;
+    margin-bottom: 5px;
+}
+
+.rentButtonBox {
+    float: right;
+    height: 25px;
+    position: relative;
+    right: 30px;
+    top: 2px;
+}
+
+.rentBtn {
+    height: 100%;
+    background-color: #61dafb;
+    font-weight: bold;
+    border: 1px solid black;
+}
+
+.returnBtn {
+    height: 100%;
+    font-weight: bold;
+    border: 1px solid black;
+}

@@ -50,10 +50,10 @@ export default function SearchResult() {
     const nameOnClick = (e: any) => {
         if(localStorage.getItem("accessToken") === null) {
             // 비로그인 간단 조회
-            navigate(`/search/simple/bookName/${e.target.innerText}`)
+            navigate(`/search/simple/bookName/${e.target.innerText}`);
         } else {
             // 로그인 상세 조회
-            navigate(`/search/detail/bookName/${e.target.innerText}`)
+            navigate(`/search/detail/bookName/${e.target.innerText}`);
         }
     }
 
@@ -68,7 +68,9 @@ export default function SearchResult() {
                             <td>{list.bookAuthor}</td>
                             <td>{list.pubDate}</td>
                             <td>{list.bookState}</td>
-                            <td>{list.bookImage}</td>
+                            <td>
+                                <img src={list.bookImage} alt="" style={{ width: 70, height: 100 }}/>
+                            </td>
                         </tr>
                     )
                 )}

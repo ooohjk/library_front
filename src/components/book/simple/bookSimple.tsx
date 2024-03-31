@@ -1,5 +1,6 @@
 import "./style.css";
 import BeforeLogin from "../../main/beforeLogin";
+import BookInfo from "../bookInfo";
 
 export default function BookSimple() {
     return (
@@ -9,7 +10,9 @@ export default function BookSimple() {
                     <BeforeLogin/>
                 </div>
                 <div className="simpleBody">
-                    간단조회
+                    <div className="simpleBox">
+                        <BookInfo/>
+                    </div>
                 </div>
             </div>
         </>

@@ -9,65 +9,6 @@
     margin: 15px auto 0 auto;
 }
 
-.bookImageBox {
-    width: 50%;
-    height: 500px;
-    float: left;
-    display: flex;
-    box-sizing: border-box;
-}
-
-.bookImageBox img {
-    width: 100%;
-    height: 100%;
-}
-
-.bookInfoBox {
-    width: 50%;
-    height: 500px;
-    float: right;
-    display: flex;
-    box-sizing: border-box;
-}
-
-.bookInfo {
-    border: 1px solid black;
-    width: 90%;
-    height: 90%;
-    margin: 5% auto;
-}
-
-.bookTitle {
-    text-align: center;
-    font-weight: bold;
-    font-size: 30px;
-}
-
-.bookAuthor, .isbn, .bookPublisher, .pubDate, .bookLocation, .bookState {
-    padding-left: 30px;
-    padding-top: 15px;
-}
-
-.bookContentBox {
-    width: 100%;
-}
-
-.bookContent {
-    border: 1px solid black;
-    width: 90%;
-    margin: 5px auto;
-    padding: 10px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.contentBtn {
-    width: 80px;
-    height: 25px;
-    margin-left: 360px ;
-    margin-bottom: 5px;
-}
-
 .bookReviewBox {
     width: 100%;
     margin-bottom: 20px;
