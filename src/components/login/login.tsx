@@ -22,7 +22,11 @@ export default function Login() {
                 localStorage.setItem("accessToken", token);
                 localStorage.setItem("userNo", res?.data.data["userNo"]);
                 localStorage.setItem("userId", res?.data.data["userId"]);
-                navigate("/");
+                if (id !== "admin") {
+                    navigate("/");
+                } else {
+                    navigate("/admin");
+                }
             }
         });
     }
@@ -50,6 +54,21 @@ export default function Login() {
         setPwd(e.target.value);
     }
 
+    const Naver = () => {
+        const REDIRECT_URI = process.env.REACT_APP_NAVER_REDIRECT_URI;
+        window.location.href = `${REDIRECT_URI}`;
+    }
+
+    const Kakao = () => {
+        const REDIRECT_URI = process.env.REACT_APP_KAKAO_REDIRECT_URI;
+        window.location.href = `${REDIRECT_URI}`;
+    }
+
+    const Google = () => {
+        const REDIRECT_URI = process.env.REACT_APP_GOOGLE_REDIRECT_URI;
+        window.location.href = `${REDIRECT_URI}`;
+    }
+
     return (
         <div className="loginScreen">
             <div className="loginBox">
@@ -64,6 +83,17 @@ export default function Login() {
                 </div>
                 <div className="cancelButton">
                     <button onClick={cancelOnClick}>취소</button>
+                </div>
+                <div className="socialLoginBox">
+                    <div className="naverIdLogin" onClick={Naver}>
+                        <img src="/naver.png" alt=""/>
+                    </div>
+                    <div className="googleLogin" onClick={Google}>
+                        <img src="/google.png" alt=""/>
+                    </div>
+                    <div className="kakaoLogin" onClick={Kakao}>
+                        <img src="/kakao.png" alt=""/>
+                    </div>
                 </div>
             </div>
         </div>

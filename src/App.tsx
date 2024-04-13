@@ -9,6 +9,7 @@ import Quit from "./components/quit/quit";
 import BookSimple from "./components/book/simple/bookSimple";
 import BookDetail from "./components/book/detail/bookDetail";
 import SearchResult from "./components/book/searchResult";
+import Admin from "./components/admin/admin";
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
         <BrowserRouter>
             <Routes>
                 <Route path={"/"} element={<Main/>}></Route>
+                <Route path={"/admin"} element={<Admin/>}></Route>
                 <Route path={"/join"} element={<Join/>}></Route>
                 <Route path={"/login"} element={<Login/>}></Route>
                 <Route path={"/myPage"} element={<MyPage/>}></Route>

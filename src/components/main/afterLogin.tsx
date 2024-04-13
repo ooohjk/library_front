@@ -1,16 +1,23 @@
 import API from "../../apis/api";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { useCookies } from "react-cookie";
 
 const AfterLogin = () => {
 
     const navigate = useNavigate();
+    const [cookie, , removeCookie] = useCookies(["accessToken", "userNo", "userId"]);
 
     const logoutOnClick = () => {
         console.log("로그아웃 버튼 클릭!");
         localStorage.removeItem("accessToken");
         localStorage.removeItem("userId");
         localStorage.removeItem("userNo");
+        if (cookie) {
+            removeCookie("accessToken");
+            removeCookie("userNo");
+            removeCookie("userId");
+        }
         alert("로그아웃을 하였습니다.");
         navigate("/");
         window.location.reload();

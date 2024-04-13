@@ -63,3 +63,54 @@
     margin-left: 5%;
     font-weight: bold;
 }
+
+.socialLoginBox {
+    /*border: 1px solid black;*/
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+    display: flex;
+}
+
+.naverLogin, .googleLogin, .kakaoLogin {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+/*#naverIdLogin {*/
+/*    position: relative;*/
+/*    left: 100px;*/
+/*}*/
+
+/*#naverIdLogin:hover {*/
+/*    cursor: pointer;*/
+/*}*/
+
+.naverIdLogin {
+    position: relative;
+    left: 100px;
+}
+
+.naverIdLogin:hover {
+    cursor: pointer;
+}
+
+.googleLogin {
+    position: relative;
+    left: 125px;
+}
+
+.googleLogin:hover {
+    cursor: pointer;
+}
+
+.kakaoLogin {
+    position: relative;
+    left: 150px;
+}
+
+.kakaoLogin:hover {
+    cursor: pointer;
+}
