@@ -1,6 +1,5 @@
 .userManage {
-    /*border: 1px solid black;*/
-    width: 900px;
+    width: 1200px;
     height: 400px;
     margin: 100px auto 0 auto;
 }
@@ -10,8 +9,7 @@
 }
 
 .bookManage {
-    /*border: 1px solid black;*/
-    width: 900px;
+    width: 1200px;
     height: 400px;
     margin: 100px auto 50px auto;
 }
@@ -88,7 +86,6 @@
 }
 
 .modalBody {
-    /*border: 1px solid black;*/
     width: 90%;
     height: 400px;
     margin: 0 auto;

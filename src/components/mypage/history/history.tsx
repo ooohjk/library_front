@@ -59,7 +59,7 @@ export default function History() {
                         {list.returnDt === null && (
                             <td>-</td>
                         )}
-                        <td>{list.rentState === 1 ? "반납" : "대여중"}</td>
+                        <td>{list.rentState === 0 ? "대여중" : "반납"}</td>
                     </tr>
                 ))}
             </>
